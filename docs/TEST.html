@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Test</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script>
+		$(document).ready(function() {
+            $('form').submit(function(e){
+              e.preventDefault();
+              document.location.href = './' + $('#password').val() + '.html';
+            });
+          });
+        </script>
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="index.html">BR Business Group <span>Escape Room social</span></a></h1>
+					<nav id="nav">
+						<ul>
+							<li class="current"><a href="index.html">HOME</a></li>
+							</ul>
+					</nav>
+				</header>
+
+			<!-- Code machine -->
+				<article id="main">
+
+					<header class="special container">
+						<span class="icon solid fa-key"></span>
+						<h2>Test page</h2>
+						<br />
+						<form style="text-align:center;">
+							<table>
+							<tr><td><label for="password">Code: </label></td>
+							<td><input autocomplete="off" id="password" type="text" placeholder="Enter code here..."></td>
+							<td><button type="submit">Submit</button></td></tr>
+							</table>
+						</form>
+					</header>
+
+			<!-- Main -->
+				<section class="wrapper style4 container">
+					<div class="content">
+					<header>
+						<h3 style= "text-align:center;">"Please ensure that you and all of your teammates can all see and hear the below video. <br /> Then, please click HOME in the top right to return to the homepage to start the Escape Room." </h3>
+						<br />
+						<p style= "text-align:center;"><iframe style="margin:0 auto" width="560" height="315" src="https://www.youtube.com/embed/xijmNVp6RJE" frameborder="0" 
+						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+						</iframe></p>
+					</header>
+				</section>
+			</article>
+		
+		<!-- Footer -->
+				<footer id="footer">
+				
+					<ul class="copyright">
+						<li>&copy; BR Business Group</li><li><i>Sorry if there are load of typos</i></a></li>
+					</ul>
+
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
